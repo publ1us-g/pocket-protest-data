@@ -1,0 +1,15 @@
+{
+  "name": "pocket-protest-data",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "retrieve-data": "node ./retrieve-data"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "csv-write-stream": "^2.0.0",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^16.1.0",
+    "sprintf-js": "^1.0.3"
+  }
+}
