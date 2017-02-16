@@ -10,6 +10,8 @@ Data resources to support https://pocketprotest.org
 Currently, this repository offers one feature: massaging "[Town Hall Project 2018]" Google sheet data and writing out
 dates as ISO-8601 strings.  To run the application :
 
+
+
 ```shell
 ### Step 1 -- Clone the repository
 git clone https://github.com/publ1us-g/pocket-protest-data.git
@@ -29,9 +31,8 @@ npm run retrieve-data
 1. Refactor to restify application
 
 ## Learning Resources
-The following resources were used to create this project and may provide additional information:
+The following resources were used to create this project and may provide useful information :
 - https://developers.google.com/sheets/api/quickstart/nodejs
-
 
 
 [Town Hall Project 2018]: https://docs.google.com/spreadsheets/d/1yq1NT9DZ2z3B8ixhid894e77u9rN5XIgOwWtTW72IYA
