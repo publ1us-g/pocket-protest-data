@@ -28,12 +28,11 @@ server.get('/echo/:name', function (req, res, next) {
 
 // The meat of our application
 server.get('/townhall-massaged', function (req, res, next){
-  /*
-  FIXME: The next block of code (callback hell) should be externalized into a module.
+  /* The next block of code (callback hell) should be externalized into a module.
           Doing so will allow it to be called via the CLI or RESTFUL API.
   */
-
-// Load client secrets from a local file.
+  
+  // Load client secrets from a local file.
   fs.readFile('client_secret.json', function processClientSecrets(err, authToken) {
     if (err) {
       console.log('Error loading client secret file: ' + err);
@@ -56,7 +55,6 @@ server.get('/townhall-massaged', function (req, res, next){
 
         })
         .catch(function (error) {
-          // TODO: Handle any error from all above steps
           console.error("Error handling request!", error);
         })
         .done();
