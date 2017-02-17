@@ -19,7 +19,10 @@ server.use(plugins.bodyParser());
 
 // Leaving this here as a sanity check
 server.get('/echo/:name', function (req, res, next) {
-  res.send(req.params);
+  res.send({
+    name: req.params[0],
+    currentDate: new Date()
+  });
   return next();
 });
 
