@@ -41,11 +41,11 @@ deploy:
         name: transfer application
         code: |
           pwd
-          ssh -i $PRIVATEKEY_PATH -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  git pull"
+          ssh -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  git pull"
     - script:
         name: npm install
-        code: ssh -i $PRIVATEKEY_PATH -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  npm install"
+        code: ssh -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  npm install"
     - script:
         name: restart application
         code: |
-          ssh -i $PRIVATEKEY_PATH -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  forever list && forever stop index.js && forever start index.js"
+          ssh -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no -l wercker 138.197.80.213 "cd /home/wercker/www/pocket-protest-data/ &&  forever list && forever stop index.js && forever start index.js"
