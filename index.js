@@ -5,7 +5,7 @@ var fs = require('fs');
 
 var sheetCommon = require('./lib/google-sheet-common');
 var writeOutputToFile = require('./lib/file-common').writeOutputToFile;
-var requestSheetValues = require('./retrieve-data').requestSheetValues;
+var requestSheetValues = require('./lib/retrieve-data').requestSheetValues;
 
 const returnMassageData = true;
 

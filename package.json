@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "retrieve-data": "node ./index"
+    "serve-data": "node ./index"
   },
   "dependencies": {
     "csv-write-stream": "^2.0.0",
