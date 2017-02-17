@@ -4,7 +4,9 @@ Data resources to support https://pocketprotest.org
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/publ1us-g/pocket-protest-data.svg)](https://greenkeeper.io/)
 
-[![Build Status](https://travis-ci.org/publ1us-g/pocket-protest-data.svg?branch=master)](https://travis-ci.org/publ1us-g/pocket-protest-data)
+[![Travis build status](https://travis-ci.org/publ1us-g/pocket-protest-data.svg?branch=master)](https://travis-ci.org/publ1us-g/pocket-protest-data)
+
+[![Wercker build status](https://app.wercker.com/status/4c3777dcbe02d484f984655d4f8234b4/s/master "wercker status")](https://app.wercker.com/project/byKey/4c3777dcbe02d484f984655d4f8234b4)
 
 ## Usage
 Currently, this repository offers one feature: massaging "[Town Hall Project 2018]" Google sheet data and writing out
