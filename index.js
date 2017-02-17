@@ -65,13 +65,6 @@ server.get('/townhall-massaged', function (req, res, next){
 
 });
 
-
-server.on('InternalServer', function (req, res, err, cb) {
-  console.error(err);
-  err.body = 'something is wrong!';
-  return cb();
-});
-
 server.on('InternalError', function (req, res, err, cb) {
   console.error(err);
   err.body = 'something is wrong!';
