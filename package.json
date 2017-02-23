@@ -8,7 +8,7 @@
   "dependencies": {
     "csv-write-stream": "^2.0.0",
     "google-auth-library": "^0.10.0",
-    "googleapis": "^16.1.0",
+    "googleapis": "^17.1.0",
     "q": "^1.4.1",
     "restify": "^4.3.0",
     "restify-plugins": "^1.5.1",
