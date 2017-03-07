@@ -16,6 +16,10 @@ const server = restify.createServer({
 server.use(plugins.acceptParser(server.acceptable));
 server.use(plugins.queryParser());
 server.use(plugins.bodyParser());
+server.use(function(req,res,next){
+  res.setHeader('content-type','application/json');
+  next();
+});
 
 // Leaving this here as a sanity check
 server.get('/echo/:name', function (req, res, next) {
@@ -49,7 +53,7 @@ server.get('/townhall-massaged', function (req, res, next){
 
           var retVal = writeOutputToFile(rows, returnMassageData);
           if (returnMassageData) {
-            res.send(retVal);
+            res.send(200, retVal);
             return next();
           }
 
