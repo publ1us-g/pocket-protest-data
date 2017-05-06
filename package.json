@@ -13,7 +13,7 @@
     "q": "^1.4.1",
     "restify": "^4.3.0",
     "restify-plugins": "^1.5.1",
-    "sprintf-js": "^1.0.3",
+    "sprintf-js": "^1.1.0",
     "tzwhere": "^1.0.0",
     "zipcodes": "^3.0.0"
   }
