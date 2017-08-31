@@ -15,6 +15,6 @@
     "restify-plugins": "^1.5.1",
     "sprintf-js": "^1.0.3",
     "tzwhere": "^1.0.0",
-    "zipcodes": "^3.0.0"
+    "zipcodes": "^4.1.0"
   }
 }
