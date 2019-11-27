@@ -11,7 +11,7 @@
     "googleapis": "^19.0.0",
     "moment-timezone": "^0.5.11",
     "q": "^1.4.1",
-    "restify": "^4.3.0",
+    "restify": "^8.4.1",
     "restify-plugins": "^1.5.1",
     "sprintf-js": "^1.0.3",
     "tzwhere": "^1.0.0",
